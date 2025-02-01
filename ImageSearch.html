@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ImageSearch.css">
+    <title>Image Search</title>
+</head>
+<body>
+    <div id = "container">
+        <header>
+            <nav>
+                <ul>
+                    <li><img src="bars.png" alt="bars"></li>
+                    <li><h1 id = "Google"><a href="index.html">Google</a></h1></li>
+                    <li><button type="button"> Sign In </button></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <img src="google.png" alt="Google">
+            <h4>images</h4>
+            <form action="https://www.google.com/search" method="GET" role="search">
+                <input type="text" name="q" id="searchBox" placeholder="Search Google Images">
+                <input type="hidden" name="tbm" value="isch"> <!-- Enables Image Search -->
+                <input type="hidden" name="hl" value="en"> <!-- Language -->
+                <div id="buttons">
+                    <input type="submit" value="Search Images">
+                </div>
+            </form>
+            
+        </main>
+        <footer>
+            <div id="state">Egypt</div>
+            <hr>
+            <div id = "foot">
+                <nav>
+                    <ul>
+                        <li> <a href="https://about.google/?utm_source=google-EG&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a></li>
+                        <li> <a href="https://www.google.com/intl/en_eg/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>
+                        <li> <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a></li>
+                        <li> <a href="https://google.com/search/howsearchworks/?fg=1">How Search Works</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="https://policies.google.com/privacy?hl=en-EG&fg=1">privacy</a></li>
+                        <li><a href="https://policies.google.com/terms?hl=en-EG&fg=1">Terms</a></li>
+                        <li>Settings</li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

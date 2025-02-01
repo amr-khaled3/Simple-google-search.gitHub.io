@@ -1,0 +1,111 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient(#3694FD 50%, white 50% 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+#container{
+    height: 80%;
+    width: 80%;
+    background-color: white;
+    box-shadow: -1px 1px 12px 1px #969595;
+}
+#Google{
+    font-weight: bold;
+    text-transform: capitalize;
+}
+body #container header nav h1 a{
+    text-decoration: none;
+    color: black;
+}
+#head{
+    text-transform: capitalize;
+    margin: 40px 20px 20px 40px;
+}
+header nav ul li{
+    display: inline-block;
+    margin: 20px 20px;
+}
+button{
+    padding: 15px;
+    background-color: #3694FD;
+    color: white;
+    font-weight: 500;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 1.875rem;
+    transition: filter 0.3s ease;
+}
+button:hover{
+    filter: brightness(0.9);
+    cursor: pointer;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+}
+main{
+    text-transform: capitalize;
+    margin: 40px 0px 20px 40px;
+}
+form{
+    width: 100%;
+    height: 100%;
+}
+
+input{
+    padding: 10px;
+}
+
+input:focus {
+    outline-color:#3694FD !important; 
+    border: none;
+}
+
+#con{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;  
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+    width: 100%; 
+}
+
+.content p{
+    width: 40%;
+    margin-left: 20px;
+}
+
+.content label{
+    width: 20%;   
+}
+
+.content input{
+    width: 48%;
+    border: none;
+    outline: 2px solid black;
+    height: fit-content;
+    padding: 5px;
+}
+body #container header nav h1 a:hover{
+    color: #e80202;
+    text-decoration: underline;
+}
+#but{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 200px;
+}
