@@ -11,6 +11,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;   
+    padding: 10px;
 }
 #container{
     height: 80%;
@@ -21,10 +22,7 @@ body{
     background-color: white;
     box-shadow: -1px 1px 12px 1px #969595;
 }
-header nav ul li{
-    display: inline-block;
-    margin: 15px 15px;
-}
+
 #Google{
     font-weight: bold;
     text-transform: capitalize;
@@ -35,11 +33,12 @@ body #container header nav h1 a{
 }
 nav{
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
+    flex-wrap: wrap;
 }
 header nav ul li{
     display: inline-block;
-    margin: 20px 20px;
+    margin: 15px;
 }
 button{
     padding: 15px;
@@ -50,6 +49,8 @@ button{
     border: none;
     border-radius: 1.875rem;
     transition: filter 0.3s ease;
+    width: auto;
+    max-width: 200px;
 }
 button:hover{
     filter: brightness(0.9);
@@ -60,33 +61,33 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 50vh;
-    overflow-x: hidden;
+    height: 65vh;
+    width: 100%;
 }
 main form{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 20px;
 }
-main > form > div input {
-    margin: 20px 10px 0px 10px;
-    padding: 15px;
+main  form  div input {
+    margin: 20px 10px 0px;
+    padding: 12px;
     border-radius: 0.3125rem;
     font-size: large;
     border: none;
     transition: filter 0.3s ease;
 }
-main > form > #searchBox{
+main  form  #searchBox{
     width: 150%;
     padding: 15px 30px;
-    width: 33.75rem;
     border: none;
     outline: 2px solid black;
     border-radius: 25px;
     background-image: url(search.png), url(mic.png);
     background-repeat: no-repeat;
-    background-position: 0.625rem center, 31.875rem center;
+    background-position: 5px center, 98% center;
     font-size: 1.2rem;
 }
 main > form  div input:hover{
@@ -96,6 +97,7 @@ main > form  div input:hover{
 footer{
     background-color: #F2F2F2;
     height: 15%;
+    width: 100%;
 }
 footer div{
     height: 50%;
@@ -105,6 +107,7 @@ footer div{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 #foot nav ul{
     display: flex;
@@ -113,7 +116,7 @@ footer div{
 }
 #foot nav ul li{
     display: inline-block;
-    margin: 15px 15px;
+    margin: 10px;
     
 }
 #foot nav ul li a{
@@ -124,12 +127,13 @@ footer div{
 }
 #state{
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
     align-items: center;
     padding-left: 10px;
     font-size: large;
 }
-header nav ul li a:hover, #foot nav ul li a:hover{
+header nav ul li a:hover, 
+#foot nav ul li a:hover{
     color: #e80202;
     text-decoration: underline;
 }
@@ -148,4 +152,72 @@ h4{
 input:focus {
     outline-color:  #3694FD !important;
     border: none;
+}
+@media screen and (max-width: 1024px) {
+    body {
+        height: auto;
+    }
+
+    #container {
+        width: 95%;
+        margin-top: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        justify-content: center;
+    }
+
+    main {
+        min-height: 60vh;
+    }
+
+}
+@media screen and (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    #container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main  form  #searchBox {
+        margin-top: 10px;
+        width: 100%;
+        background-position: 5px center, 98% center;
+    }
+
+    button {
+        padding: 10px;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    #foot nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #foot nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
 }

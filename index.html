@@ -1,51 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Search</title>
         <link rel="stylesheet" href="index.css">
+        <link rel="icon" href="icon.png" type="image/x-icon">
     </head>
     <body>
-        <div id = "container">
+        <div id="container">
             <header>
-                <nav>
+                <nav role="navigation">
                     <ul>
-                        <li><a href="ImageSearch.html"> Image Search </a></li>
-                        <li><a href="Adavanced_Search.html"> Advanced Search </a></li>
-                        <li><img src="bars.png" alt="bars"></li>
-                        <li><button type="button"> Sign In </button></li>
+                        <li><a href="ImageSearch.html">Image Search</a></li>
+                        <li><a href="Adavanced_Search.html">Advanced Search</a></li>
+                        <li><img src="bars.png" alt="Menu" aria-label="Menu"></li>
+                        <li><button type="button" aria-label="Sign In">Sign In</button></li>
                     </ul>
                 </nav>
             </header>
             <main>
-                <img src="google.png" alt="Logo">
-                <form action="https://google.com/search" method="get">
-                    <input type="text" name="q" id = "searchBox" placeholder="Search Google or type a URL">
-                    <div id = "buttons">
-                        <input type="submit" value="Google Search">
-                        <input type="submit" value="I’m Feeling Lucky" name="btnI">
+                <img src="google.png" alt="Google Logo" aria-label="Google Logo">
+                <form action="https://google.com/search" method="get" role="search">
+                    <input type="text" name="q" id="searchBox" placeholder="Search Google or type a URL" aria-label="Search Google or type a URL">
+                    <div id="buttons">
+                        <input type="submit" value="Google Search" aria-label="Google Search">
+                        <input type="submit" value="I’m Feeling Lucky" name="btnI" aria-label="I’m Feeling Lucky">
                     </div>
                 </form>
             </main>
             <footer>
                 <div id="state">Egypt</div>
                 <hr>
-                <div id = "foot">
-                    <nav>
+                <div id="foot">
+                    <nav role="navigation">
                         <ul>
-                            <li> <a href="https://about.google/?utm_source=google-EG&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a></li>
-                            <li> <a href="https://www.google.com/intl/en_eg/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>
-                            <li> <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a></li>
-                            <li> <a href="https://google.com/search/howsearchworks/?fg=1">How Search Works</a></li>
+                            <li><a href="https://about.google/?utm_source=google-EG&utm_medium=referral&utm_campaign=hp-footer&fg=1" target="_blank" rel="noopener noreferrer">About</a></li>
+                            <li><a href="https://www.google.com/intl/en_eg/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1" target="_blank" rel="noopener noreferrer">Advertising</a></li>
+                            <li><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1" target="_blank" rel="noopener noreferrer">Business</a></li>
+                            <li><a href="https://google.com/search/howsearchworks/?fg=1" target="_blank" rel="noopener noreferrer">How Search Works</a></li>
                         </ul>
                         <ul>
-                            <li><a href="https://policies.google.com/privacy?hl=en-EG&fg=1">privacy</a></li>
-                            <li><a href="https://policies.google.com/terms?hl=en-EG&fg=1">Terms</a></li>
-                            <li>Settings</li>
+                            <li><a href="https://policies.google.com/privacy?hl=en-EG&fg=1" target="_blank" rel="noopener noreferrer">Privacy</a></li>
+                            <li><a href="https://policies.google.com/terms?hl=en-EG&fg=1" target="_blank" rel="noopener noreferrer">Terms</a></li>
+                            <li><a href="#" aria-label="Settings">Settings</a></li>
                         </ul>
                     </nav>
                 </div>
             </footer>
         </div>
-
     </body>
 </html>
